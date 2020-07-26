@@ -1,0 +1,18 @@
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "fedora/32-cloud-base"
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    v.cpus = 2
+  end
+
+
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo dnf install -y git clang cmake make pkg-config webkit2gtk3-devel libzip-devel libcurl-devel libicu-devel maven unzip vim-common
+    curl -O https://download.clojure.org/install/linux-install-1.9.0.358.sh
+    chmod +x linux-install-1.9.0.358.sh
+    sudo ./linux-install-1.9.0.358.sh
+  SHELL
+
+end
