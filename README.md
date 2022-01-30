@@ -21,6 +21,6 @@ When you are finished with a VM you can remove it with `vagrant destroy`.
 
 # License
 
-Copyright © 2018–2019 Mike Fikes and Contributors
+Copyright © 2018–2022 Mike Fikes and Contributors
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
