@@ -5,7 +5,7 @@ This repo contains [Vagrant](https://www.vagrantup.com) build environment setups
 If you don't have Vagrant, you can set it up on macOS using Homebrew:
 
 ```
-brew cask install virtualbox vagrant
+brew install virtualbox vagrant
 ```
 
 Here are example steps that can be followed to build Planck on for a given distro:
